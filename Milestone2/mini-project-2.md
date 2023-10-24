@@ -704,10 +704,7 @@ file in your `output` folder. Use the `here::here()` function.
 
 <!-------------------------- Start your work below ---------------------------->
 
-    write_csv(Q1_11_tibble,"Q1_11_tibble.csv")
-    here::here("Q1_11_tibble.csv")
-
-    ## [1] "/Users/liuzefan/Desktop/STAT545A Milestones/Milestone2/Q1_11_tibble.csv"
+    write_csv(Q1_11_tibble,here::here("Output/Q1_11_tibble.csv"))
 
 <!----------------------------------------------------------------------------->
 
@@ -722,8 +719,8 @@ Use the functions `saveRDS()` and `readRDS()`.
 
 <!-------------------------- Start your work below ---------------------------->
 
-    saveRDS(pred_model, file = "pred_model")
-    readRDS("pred_model")
+    saveRDS(pred_model, file = here::here("Output/pred_model"))
+    readRDS(here::here("Output/pred_model"))
 
     ## 
     ## Call:
